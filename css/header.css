@@ -32,7 +32,23 @@ header{
     position: relative;
     flex-direction: column;
 }
-
+.header{   
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255,255,255,0);
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.header:hover{
+    background-color: white;
+}
+header .wrap{
+    
+    padding-bottom: 0;
+    position: relative;
+    padding-top: 10px;
+}
 div>*{ /* css주석 >바로아래 * 모든 요소 */
     /*! border: 1px solid; */
 }
@@ -42,8 +58,8 @@ header .menu{
 h1{
     font-size: 59px;
     color: #9292ce;
-    margin: 0;
-    margin: 22px 10px;
+    margin: 12px 10px;
+    display: flex;
 }
 header h1 a{ /* 하위 선택자 h1안(아래)에 있는 a*/
     font-size: 0;
@@ -60,16 +76,18 @@ header ul{
     margin: 1px 2px 3px 4px;
     padding: 0;
 }
-header ul.mnb{
+header ul.gnb{
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 50px;
 }
-header ul.mnb li{
+header ul.gnb li{
 }
-header ul.mnb li a{
-    color: #7f7f7f;
+header ul.gnb li a{
+    color: white;
     padding: 0 15px;
+    font-size: 13px;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 1px black, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 8px #0d1a41, 0 0 10px #0d1a41;
 }
 header ul.enb{
     /*! padding: 10px 30px; */
@@ -78,7 +96,7 @@ header ul.enb{
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
     padding: 25px 60px;
-    column-gap: 10px;
+    justify-content: space-around;
 }
 
 header ul.enb li{
@@ -86,7 +104,9 @@ header ul.enb li{
 }
 header ul.enb li a{
     
-    color: #555658;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 1px black, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 8px #0d1a41, 0 0 10px #0d1a41;
 }
 header ul li{ /*:hover은 해당요소에 마우스를 올린상태를 의미 */
     color:#000;
@@ -102,6 +122,7 @@ header ul li a{
 header ul li a:hover{ /*:hover은 해당요소에 마우스를 올린상태를 의미 */
     color:#000;
     border-bottom:2px solid #ccc;
+    text-shadow: none;
 }
 a{
  text-decoration: none; /*밑줄없애기*/
@@ -138,7 +159,7 @@ header > a:nth-of-type(2)::after{
   .neonText {
     animation: flicker 5.5s infinite alternate;
     /*! color: #fff; */
-    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 1px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 8px #0d1a41, 0 0 10px #0d1a41;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 1px black, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 8px #0d1a41, 0 0 10px #0d1a41;
   }
 @keyframes flicker {
   0%,
@@ -148,7 +169,7 @@ header > a:nth-of-type(2)::after{
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 18px #3593b9,
+    text-shadow: 0 0 4px #0d1a41, 0 0 7px #0d1a41, 0 0 10px #0d1a41, 0 0 18px #3593b9,
       0 0 15px #0d1a41, 0 0 15px #0d1a41, 0 0 18px #0d1a41, 0 0 15px #0d1a41;
   }
   20%,

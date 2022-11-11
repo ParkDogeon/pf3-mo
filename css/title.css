@@ -5,16 +5,18 @@ div#title{
   background-origin: content-box,border-box;
   position: relative;
   z-index: 1;
+  height: 100%;
+  box-sizing: border-box;
 }
 div#title .in{
   height: 100%; 
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
   /*! border: 3px solid #999; */
   border-top: transparent;
   font-family: 'Noto Sans KR', sans-serif;
   padding-top: 100px;
-  padding-left: 100px;
+  padding-left: 50px;
   box-sizing: border-box; /* padding을 주면 크기가 커지는데 크기가 커지지 않게 처리 */
   position: relative;
   color: #fff;
@@ -26,27 +28,68 @@ div#title .in{
   background-position-y: bottom;
 }
 div#title h2{
-  font-size: 24px;
-  margin-top: 100px;
+  font-size: 22px;
+  margin-top: 220px;
+  animation-name: goright;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+@keyframes goright{
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 div#title h2 + p{ /* + 인접선택자,형제선택자 h2다음에 오는 p */
-  font-size: 50px;
+  font-size: 40px;
   line-height: 3;
+  animation-name: goleft;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+@keyframes goleft{
+  0%{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 div#title h2 + p + p{
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 40px;
   line-height: 2;
+  animation-name: up;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+@keyframes up{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 div#title a{ /* 인라인태그에는 padding(크기에 영향)이 정확히 적용되지 않는다.display:block로 전환 */
   border: 1px solid;
   padding: 20px 30px;
-  margin-top: 60px;
+  margin-top: 50px;
   display: inline-block;
   width: 250px; 
   text-align: center;
   transition: all 0.5s;
   color: aliceblue;
+  font-size: 16px;
 }
 div#title a::after{
   content: "";
@@ -60,7 +103,7 @@ div#title a::after{
   transform: rotate(45deg);
 }
 div#title a:hover{
-  background-color: #27c9d1;
+  background-color: #024896;
   color: #fff;
 }
 div#title .in::after{
@@ -89,6 +132,7 @@ video{
   object-fit: cover;    
   position: absolute;
 }
+
 
 
 

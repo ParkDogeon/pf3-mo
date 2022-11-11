@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/scroll.css">
     <!-- 구글웹폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +22,25 @@
 <body>
     <!-- 상단영역 -->
     <header>
-    <div class="header">
-        <h1><a href="index.html">LUNA</a></h1>
-        <a href="" class="menu">menu</a>
-        <ul class="mnb">
-            <li><a href="">LOGIN</a></li>
-            <li><a href="">JOIN</a></li>
-            <li><a href="">CART</a></li>
-            <li><a href="">RECRUIT</a></li>
-            
-        </ul>
-    </div>
-    <ul class="enb">
-        <li><a href="">메인</a></li>
-        <li><a href="">회사소개</a></li>
-        <li><a href="">서비스</a></li>
-        <li><a href="">히스토리</a></li>
-        <li><a href="">오시는 길</a></li>
-    </ul>
+        <div class="header">
+            <div class="wrap">
+                    <h1><a href="index.html">LUNA</a></h1>
+                    <a href="" class="menu">menu</a>
+                    <ul class="enb">
+                        <li><a href="">메인</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">서비스</a></li>
+                        <li><a href="">히스토리</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                    <ul class="gnb">
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">JOIN</a></li>
+                        <li><a href="">CART</a></li>
+                        <li><a href="">RECRUIT</a></li>   
+                    </ul>        
+            </div>
+        </div>
     </header>
     <div id="title">
         <video src="img/game.mp4" muted autoplay loop></video>
@@ -48,6 +50,7 @@
             <p class="neonText">루나브루에는 대한민국의 모든 <span class="block"></span>브루어리의 진짜 수제맥주를 <span class="block"></span>고객에게 전해드리는 <span class="block"></span>
                 국내 유일의 수제맥주 전문 기업입니다.</p>
             <a href="">루나브루에서 판매 중인 맥주 보기</a>
+            <span><a href="" class="scroll"></a></span>
         </div>
     </div>
     <main>
@@ -165,7 +168,7 @@
         <!-- 찾아오는 길 -->
         <section id="location">
             <div class="wrap">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.943549978831!2d127.14697441558545!3d37.41480914056017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca85dba316005%3A0x9ae9494abd91aa16!2z6rK96riw64-EIOyEseuCqOyLnCDspJHsm5Dqtawg64-E7LSM64-ZIDUxOQ!5e0!3m2!1sko!2skr!4v1665106256583!5m2!1sko!2skr"></iframe>
+                <iframe frameborder="1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.943549978831!2d127.14697441558545!3d37.41480914056017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca85dba316005%3A0x9ae9494abd91aa16!2z6rK96riw64-EIOyEseuCqOyLnCDspJHsm5Dqtawg64-E7LSM64-ZIDUxOQ!5e0!3m2!1sko!2skr!4v1665106256583!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="right">
                     <hgroup>
                         <h2 class="subject">LOCATION</h2>
@@ -193,6 +196,7 @@
                 <li><a href="">인스타그램</a></li>
             </ul>
         </div>
+        <a href="" class="top"></a>
     </footer>
 </body>
 </html>

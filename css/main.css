@@ -4,7 +4,7 @@ main{
 section{
   /*! width: 1440px; */
   margin: 0 auto;
-  border: 3px solid #999;
+/*   border: 3px solid #999; */
   box-sizing: border-box;
   border-top: transparent;
   font-family: 'Noto Sans KR', sans-serif;
@@ -30,11 +30,11 @@ section{
   font-weight: 700;
 }
 section#about{
-  background-image: url(../img/back2.2.png);
+  background-image: url(../img/back2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  height: 593px;
+  height: 800px;
   box-sizing: border-box;
 }
 section#about .company{
@@ -136,7 +136,7 @@ section#about .company img{
   transition-duration: 0.5s;
   /*! transition: opacity 0.5s; */
   margin-right: 55px;
-  margin-top: 85px;
+  margin-top: 190px;
 }
 section#about .company img:hover{
   opacity: 0.3;
@@ -274,8 +274,8 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #history .wrap{
-  
   width: 1000px;
   margin: 0 auto;
   /*! margin-left: 200px; */
@@ -295,6 +295,8 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
 #history .wrap hgroup{
   
   color: white;
+  box-sizing: border-box;
+  padding-left: 40px;
 }
 #history .wrap hgroup h2{
   
@@ -336,14 +338,16 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   top: 13px;
 }
 #history .wrap ul.list li{
-  /*! color: #bbb; */
-  font-size: 12px;
+  color: white;
+  font-size: 15px;
+  display: block;
   box-sizing: border-box;
+  line-height: 35px;
 }
 #history .wrap ul.list li:hover{
   content: "";
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   transition: all 0.5s; 
 }
 #history .wrap ul.list li:nth-child(n+2){
@@ -360,6 +364,7 @@ aside{
   bottom: -40px;
   text-align: center;
   line-height: 118px;
+  display: none;
 }
 aside button{ /*버튼스타일 초기화*/
   font-size: 0;
@@ -383,17 +388,24 @@ section#location{
 
   background-image: url(../img/back5.png);
   background-size: cover;
+  height: 800px;
+  background-position-x: right;
 }
 section#location .wrap{
   width: 1200px;
   margin: 0 auto;
   display: flex;
   column-gap: 70px;
+  height: 100%;
+  padding: 100px 0;
+  box-sizing: border-box;
+  align-items: center;
 }
 section#location .wrap iframe{
   border: 2px solid #ccc !important;
   width: 790px;
   height: 390px;
+  display: flex;
 }
 section#location .wrap .right{
   
@@ -417,7 +429,7 @@ section#location .wrap .right p{
   color: white;
 }
 section#location .wrap .right a{
-  margin-top: 21px;
+  margin-top: 80px;
   display: inline-block;
   line-height: 3;
   padding: 0px 45px;
