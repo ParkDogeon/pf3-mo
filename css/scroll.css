@@ -27,22 +27,6 @@
     }
     100%{
     }
-    
-/*     0%{
-        transform: translateX(0px) translateY(0px);
-    }
-    25%{
-        transform: translateX(100px);
-    }
-    50%{
-        transform: translateX(100px) translateY(-100px);
-    }
-    75%{
-        transform: translateX(0px) translateY(-100px);
-    }
-    100%{
-        transform: translateX(0px) translateY(0px);
-    } */
 }
 .scroll::before{
     content: ""; 
