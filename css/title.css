@@ -52,6 +52,7 @@ div#title h2 + p{ /* + 인접선택자,형제선택자 h2다음에 오는 p */
   animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
+  font-weight: bolder;
 }
 @keyframes goleft{
   0%{
